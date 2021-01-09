@@ -1,0 +1,11 @@
+QuadRoot=function(inputdata)
+{
+  a=inputdata[1]
+  b=inputdata[2]
+  c=inputdata[3]
+  t=b^2-4*a*c
+  x1=((-b)+sqrt(t))/(2*a)
+  x2=((-b)-sqrt(t))/(2*a)
+  output=data.frame(x1,x2)
+  return(output)
+}

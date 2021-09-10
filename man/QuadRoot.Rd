@@ -5,7 +5,7 @@
 QuadRoot(inputdata)
 }
 \description{
-It is used to find simple quadratic roots from any quadratic equation
+It is used to find simple quadratic roots from any quadratic equation. This package follows the Sridharacharya method to solve a quadratic equation.
 }
 
 \arguments{

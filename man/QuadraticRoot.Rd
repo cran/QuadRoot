@@ -9,9 +9,11 @@ It is used to find simple quadratic roots from any quadratic equation. This pack
 }
 
 \arguments{
+
   \item{inputdata}{
-coefficient vector of quadratic equation
-}
+
+      Coefficient vector of quadratic equation
+  }
 }
 
 \value{It returns quadratic roots of the equation}

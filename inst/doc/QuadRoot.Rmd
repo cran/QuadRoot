@@ -1,0 +1,64 @@
+---
+title: "QuadRoot"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{QuadRoot}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+**Application of QuadRoot package for finding the roots of a quadratic equation**
+
+## Authors
+
+Pankaj Das (https://orcid.org/0000-0003-1672-2502)
+
+
+
+## Introduction
+
+In mathematics, the roots of a quadratic equation are the values of the variable (usually denoted as "x") that satisfy the equation and make it equal to zero. The general form of a quadratic equation is:
+
+ax^2 + bx + c = 0
+
+where "a," "b," and "c" are constants, and "a" is not equal to zero (a ≠ 0). To find the roots of a quadratic equation, you can use the quadratic formula:
+x = (-b ± √(b² - 4ac)) / (2a)
+
+The symbol "±" indicates that there are usually two roots, one with a plus sign and one with a minus sign, giving you two possible solutions for "x." These are called the "root" or "zero" of the quadratic equation.
+
+The expression inside the square root, "b² - 4ac," is called the discriminant. Depending on its value, you can determine the nature of the roots:
+
+If the discriminant (b² - 4ac) is positive, you have two distinct real roots.
+If the discriminant is zero, you have one real root, which is often referred to as a "double root" or "repeated root."
+If the discriminant is negative, you have two complex roots, which are conjugate pairs with real and imaginary parts.
+So, to find the roots of a given quadratic equation, you can use the quadratic formula and plug in the values of "a," "b," and "c" from your specific equation.
+
+## Function in the R package
+
+**QuadRoot**- The Quadroot function helps the user to find simple quadratic roots from any quadratic equation.
+
+
+## Background
+
+A quadratic issue is one in which a variable is multiplied by itself, a process known as squaring in mathematics. The packages was developed using the Sridharacharya formula. It is used to solve the Sridharacharya equation. The Sridharacharya equation is given by ax2 + bx + c = 0, where a, b, c are real numbers and a ≠ 0. The solution of the Sridharacharya equation is given by the Sridharacharya formula which is x = (-b ± √(b2 - 4ac)) / 2a.
+
+
+
+```{r setup}
+##Example how the package works
+library(QuadRoot)
+#the roots of the quadratic equation 2x² + 5x - 3 = 0
+#Coefficient vector generation
+dataset <- c(2,5,-3)
+
+#Application of EMDANN model
+QuadRoot(dataset)
+
+
+```
